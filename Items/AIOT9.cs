@@ -24,6 +24,7 @@ namespace AIOTools.Items
 			item.useAnimation = 14;
 			item.pick = 250;
 			item.axe = 30;
+			item.tileBoost = 3;
 			item.melee = true;
 			item.useStyle = ItemUseStyleID.SwingThrow;
 			item.UseSound = SoundID.Item1;
