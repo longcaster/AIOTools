@@ -83,7 +83,17 @@ namespace AIOTools.Items
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.DirtBlock, 1);
+			recipe.AddIngredient(ItemID.CopperPickaxe, 1);
+			recipe.AddIngredient(ItemID.CopperAxe, 1);
+			recipe.AddIngredient(ItemID.CopperHammer, 1);
+			recipe.AddTile(TileID.Anvils);
+			recipe.SetResult(this);
+			recipe.AddRecipe();
+
+			recipe = new ModRecipe(mod);
+			recipe.AddIngredient(ItemID.TinPickaxe, 1);
+			recipe.AddIngredient(ItemID.TinAxe, 1);
+			recipe.AddIngredient(ItemID.TinHammer, 1);
 			recipe.AddTile(TileID.Anvils);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
