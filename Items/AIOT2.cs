@@ -7,7 +7,7 @@ namespace AIOTools.Items
 {
 	public class AIOT2 : ModItem
 	{
-		private int mode = 0;
+		private int mode = 1;
 
 		public override void SetStaticDefaults()
 		{

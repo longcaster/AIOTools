@@ -5,13 +5,13 @@ using Terraria.ModLoader;
 
 namespace AIOTools.Items
 {
-	public class AIOT3 : ModItem
+	public class AIOT9 : ModItem
 	{
 		private int mode = 1;
 
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("AIOT Mk.III (Evil Tier)");
+			DisplayName.SetDefault("AIOT Ultimate (Post-ML Tier)");
 			Tooltip.SetDefault("Combination pickaxe, axe, and hammer\nRight click to switch modes");
 		}
 
@@ -19,18 +19,18 @@ namespace AIOTools.Items
 		{
 			item.width = 40;
 			item.height = 40;
-			item.damage = 18;
-			item.knockBack = 5.0f;
-			item.useAnimation = 22;
-			item.pick = 65;
-			item.axe = 16;
+			item.damage = 146;
+			item.knockBack = 7.0f;
+			item.useAnimation = 14;
+			item.pick = 250;
+			item.axe = 30;
 			item.melee = true;
 			item.useStyle = ItemUseStyleID.SwingThrow;
 			item.UseSound = SoundID.Item1;
 			item.autoReuse = true;
 			item.useTurn = true;
-			item.value = Item.sellPrice(silver: 30);
-			item.rare = ItemRarityID.Blue;
+			item.value = Item.sellPrice(gold: 20);
+			item.rare = ItemRarityID.Purple;
 			SetUpItem();
 		}
 		public override bool AltFunctionUse(Player player)
@@ -63,29 +63,20 @@ namespace AIOTools.Items
 			switch(mode)
 			{
 				case 0: // HAMMERTIME
-					item.useTime = 18;
+					item.useTime = 5;
 					item.pick = 0;
 					item.axe = 0;
-					item.hammer = 60;
+					item.hammer = 100;
 					break;
 
 				case 1: // not hammertime
-					item.useTime = 14;
-					item.pick = 65;
-					item.axe = 16;
+					item.useTime = 4;
+					item.pick = 250;
+					item.axe = 30;
 					item.hammer = 0;
 					break;
 			}
 
-		}
-
-		public override void AddRecipes()
-		{
-			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.DirtBlock, 1);
-			recipe.AddTile(TileID.Anvils);
-			recipe.SetResult(this);
-			recipe.AddRecipe();
 		}
 	}
 }
