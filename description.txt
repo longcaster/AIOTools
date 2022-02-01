@@ -8,4 +8,5 @@ Nine tiers of AIOT are added, from Copper tier all the way to Post-ML for Calami
 In terms of progression, AIOTs are also a bit easier to get compared to the comparable vanilla tool so you can get past the monotony of mining a bit quicker.
 Higher tier AIOTs also pack a punch and can be used as servicable weapons.
 
+Sprites are currently placeholders.
 Inspired by the plethora of multipurpose tools in various Minecraft mods.
