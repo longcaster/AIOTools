@@ -1,0 +1,3 @@
+displayName = All-in-One Tools
+author = St. Jimmy
+version = 0.1
