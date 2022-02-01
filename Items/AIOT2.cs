@@ -20,7 +20,7 @@ namespace AIOTools.Items
 			item.width = 40;
 			item.height = 40;
 			item.damage = 12;
-			item.knockBack = 4.5f;
+			item.knockBack = 4.0f;
 			item.useAnimation = 22;
 			item.pick = 55;
 			item.axe = 11;
