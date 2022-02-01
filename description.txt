@@ -3,6 +3,8 @@ All-in-One Tools adds a new class of tools, all-in-one tools (henceforth known a
 These handy bois function as a pickaxe and axe on left click (like the Picksaw) but can be swapped into a hammer on right click, and vice versa.
 As a result, you are saved an additional hotbar slot for weapons and whatnot. Use your imagination.
 
+Nine tiers of AIOT are added, from Copper tier all the way to Post-ML for Calamity.
+
 In terms of progression, AIOTs are also a bit easier to get compared to the comparable vanilla tool so you can get past the monotony of mining a bit quicker.
 Higher tier AIOTs also pack a punch and can be used as servicable weapons.
 
