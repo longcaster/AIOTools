@@ -83,7 +83,11 @@ namespace AIOTools.Items
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.DirtBlock, 1);
+			recipe.AddIngredient(mod.ItemType("AIOT5"));
+			recipe.AddIngredient(ItemID.HallowedBar, 18);
+			recipe.AddIngredient(ItemID.SoulofFright, 1);
+			recipe.AddIngredient(ItemID.SoulofMight, 1);
+			recipe.AddIngredient(ItemID.SoulofSight, 1);
 			recipe.AddTile(TileID.MythrilAnvil);
 			recipe.SetResult(this);
 			recipe.AddRecipe();

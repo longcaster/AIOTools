@@ -83,7 +83,9 @@ namespace AIOTools.Items
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.DirtBlock, 1);
+			recipe.AddIngredient(mod.ItemType("AIOT6"));
+			recipe.AddIngredient(ItemID.ChlorophyteBar, 12);
+			recipe.AddIngredient(ItemID.Picksaw, 1);
 			recipe.AddTile(TileID.MythrilAnvil);
 			recipe.SetResult(this);
 			recipe.AddRecipe();

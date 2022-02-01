@@ -83,7 +83,12 @@ namespace AIOTools.Items
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.DirtBlock, 1);
+			recipe.AddIngredient(mod.ItemType("AIOT7"));
+			recipe.AddIngredient(ItemID.LunarBar, 10);
+			recipe.AddIngredient(ItemID.FragmentNebula, 8);
+			recipe.AddIngredient(ItemID.FragmentSolar, 8);
+			recipe.AddIngredient(ItemID.FragmentStardust, 8);
+			recipe.AddIngredient(ItemID.FragmentVortex, 8);
 			recipe.AddTile(TileID.LunarCraftingStation);
 			recipe.SetResult(this);
 			recipe.AddRecipe();

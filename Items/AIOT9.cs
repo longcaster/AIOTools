@@ -79,5 +79,27 @@ namespace AIOTools.Items
 			}
 
 		}
+
+		public override void AddRecipes()
+		{
+			Mod Calamity = ModLoader.GetMod("CalamityMod");
+
+			ModRecipe recipe = new ModRecipe(mod);
+			recipe.AddIngredient(mod.ItemType("AIOT8"));
+			recipe.AddIngredient(ItemID.LunarBar, 50);
+			recipe.AddTile(TileID.LunarCraftingStation);
+			recipe.SetResult(this);
+			recipe.AddRecipe();
+
+			if (Calamity != null)
+			{
+				recipe = new ModRecipe(mod);
+				recipe.AddIngredient(mod.ItemType("AIOT8"));
+				recipe.AddIngredient(Calamity.ItemType("UeliaceBar"), 8);
+				recipe.AddTile(TileID.LunarCraftingStation);
+				recipe.SetResult(this);
+				recipe.AddRecipe();
+			}
+		}
 	}
 }
