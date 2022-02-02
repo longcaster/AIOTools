@@ -10,7 +10,7 @@ Higher tier AIOTs also pack a punch and can be used as servicable weapons.
 
 [c/FFD100:Gold tier] can mine Meteorite [i/x:116]
 [c/6400FF:Evil tier] can mine Hellstone [i/x:174]
-[c/FF4D00:Hellstone tier] can mine Cobalt/Palladium [i/x:364][i/x:1104]
+[c/FF4D00:Hellstone tier] can mine Cobalt/Palladium [i/x:364]
 [c/FF0000:Adamantite tier] can mine Cryonic and Hallowed ores from Calamity [i/x:1225]
 [c/FFEA51:Hallowed tier] can mine Chlorophyte [i/x:947]
 [c/844A00:Golem tier] can mine Lihzahrd brick [i/x:1101]
