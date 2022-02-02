@@ -1,4 +1,4 @@
-All-in-One Tools adds a new class of tools, all-in-one tools (henceforth known as AIOTs).
+[c/00C5FF:All-in-One Tools adds a new class of tools, all-in-one tools (henceforth known as AIOTs).]
 
 These handy bois function as a pickaxe and axe on left click (like the Picksaw) but can be swapped into a hammer on right click, and vice versa.
 As a result, you are saved an additional hotbar slot for weapons and whatnot. Use your imagination.
@@ -8,14 +8,14 @@ Nine tiers of AIOT are added, from Copper tier all the way to Post-ML for Calami
 In terms of progression, AIOTs are also a bit easier to get compared to the comparable vanilla tool so you can get past the monotony of mining a bit quicker.
 Higher tier AIOTs also pack a punch and can be used as servicable weapons.
 
-Gold tier AIOT can mine Meteorite [i/116]
-Evil tier AIOT can mine Hellstone [i/174]
-Hellstone tier AIOT can mine Cobalt/Palladium [i/364][i/1104]
-Adamantite tier AIOT can mine Cryonic and Hallowed ores from Calamity [i/1225]
-Hallowed tier AIOT can mine Chlorophyte [i/947]
-Golem tier AIOT can mine Lihzahrd brick [i/1101]
-Lunar tier AIOT can mine everything in the base game as well as Uelibloom ore from Calamity [i/3460]
-Post-ML tier AIOT can mine Auric ore from Calamity.
+[c/FFD100:Gold tier] AIOTs can mine Meteorite [i/x:116]
+[c/6400FF:Evil tier] AIOTs can mine Hellstone [i/x:174]
+[c/FF4D00:Hellstone tier] AIOTs can mine Cobalt/Palladium [i/x:364][i/x:1104]
+[c/FF0000:Adamantite tier] AIOTs can mine Cryonic and Hallowed ores from Calamity [i/x:1225]
+[c/FFEA51:Hallowed tier] AIOTs can mine Chlorophyte [i/x:947]
+[c/844A00:Golem tier] AIOTs can mine Lihzahrd brick [i/x:1101]
+[c/44FFFEA:Lunar tier] AIOTs can mine everything in the base game as well as Uelibloom ore from Calamity [i/x:3460]
+[c/44FFFEA:Post-ML tier] AIOTs can mine Auric ore from Calamity.
 
 Sprites are currently placeholders.
 Inspired by the plethora of multipurpose tools in various Minecraft mods.
