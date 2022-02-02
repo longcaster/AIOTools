@@ -17,7 +17,7 @@ namespace AIOTools.Items
 
 		public override void SetDefaults()
 		{
-			item.width = 40;
+			item.width = 36;
 			item.height = 40;
 			item.damage = 24;
 			item.knockBack = 5.0f;
