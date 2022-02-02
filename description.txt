@@ -1,6 +1,6 @@
 All-in-One Tools adds a new class of tools, all-in-one tools (henceforth known as AIOTs).
 
-These handy bois function as a pickaxe and axe on left click (like the Picksaw) but can be swapped into a hammer on right click, and vice versa.
+These handy bois function as a pickaxe axe normally but can be swapped into a hammer on right click, and vice versa.
 As a result, you are saved an additional hotbar slot for weapons and whatnot. Use your imagination.
 
 Nine tiers of AIOT are added, from Copper tier all the way to Post-ML for Calamity.
