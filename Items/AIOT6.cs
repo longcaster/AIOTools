@@ -45,12 +45,14 @@ namespace AIOTools.Items
 			if (player.altFunctionUse == 2)
 			{
 				if (mode == 0)
-                {
-					mode = 1; // hammer mode
+				{
+					mode = 1; // normal mode
+					CombatText.NewText(player.getRect(), Color.LightGreen, "Pickaxe and axe mode activated!");
 				}
 				else if (mode == 1)
-                {
-					mode = 0; // normal mode
+				{
+					mode = 0; // hammer mode
+					CombatText.NewText(player.getRect(), Color.LightYellow, "Hammer mode activated!");
 				}
 				SetUpItem();
 				Main.PlaySound(SoundID.Item37, player.Center);
