@@ -48,7 +48,7 @@ namespace AIOTools.Items
 				if (mode == 0)
 				{
 					mode = 1; // normal mode
-					CombatText.NewText(player.getRect(), Color.LightGreen, "Pickaxe and axe mode activated!");
+					CombatText.NewText(player.getRect(), Color.LightGreen, "Digging mode activated!");
 				}
 				else if (mode == 1)
 				{
