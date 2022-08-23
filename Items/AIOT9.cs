@@ -1,5 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Terraria;
+using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
@@ -17,21 +18,21 @@ namespace AIOTools.Items
 
 		public override void SetDefaults()
 		{
-			item.width = 36;
-			item.height = 40;
-			item.damage = 150;
-			item.knockBack = 7.0f;
-			item.useAnimation = 14;
-			item.pick = 250;
-			item.axe = 30;
-			item.tileBoost = 5;
-			item.melee = true;
-			item.useStyle = ItemUseStyleID.SwingThrow;
-			item.UseSound = SoundID.Item1;
-			item.autoReuse = true;
-			item.useTurn = true;
-			item.value = Item.sellPrice(gold: 20);
-			item.rare = ItemRarityID.Purple;
+			Item.width = 36;
+			Item.height = 40;
+			Item.damage = 150;
+			Item.knockBack = 7.0f;
+			Item.useAnimation = 14;
+			Item.pick = 250;
+			Item.axe = 30;
+			Item.tileBoost = 5;
+			Item.DamageType = DamageClass.Melee/* tModPorter Suggestion: Consider MeleeNoSpeed for no attack speed scaling */;
+			Item.useStyle = ItemUseStyleID.Swing;
+			Item.UseSound = SoundID.Item1;
+			Item.autoReuse = true;
+			Item.useTurn = true;
+			Item.value = Item.sellPrice(gold: 20);
+			Item.rare = ItemRarityID.Purple;
 			SetUpItem();
 		}
 		public override bool AltFunctionUse(Player player)
@@ -55,7 +56,7 @@ namespace AIOTools.Items
 					CombatText.NewText(player.getRect(), Color.LightYellow, "Hammer mode activated!");
 				}
 				SetUpItem();
-				Main.PlaySound(SoundID.Item37, player.Center);
+				SoundEngine.PlaySound(SoundID.Item37, player.Center);
 				return true;
 			}
 			return true;
@@ -66,17 +67,17 @@ namespace AIOTools.Items
 			switch(mode)
 			{
 				case 0: // HAMMERTIME
-					item.useTime = 5;
-					item.pick = 0;
-					item.axe = 0;
-					item.hammer = 100;
+					Item.useTime = 5;
+					Item.pick = 0;
+					Item.axe = 0;
+					Item.hammer = 100;
 					break;
 
 				case 1: // not hammertime
-					item.useTime = 4;
-					item.pick = 250;
-					item.axe = 30;
-					item.hammer = 0;
+					Item.useTime = 4;
+					Item.pick = 250;
+					Item.axe = 30;
+					Item.hammer = 0;
 					break;
 			}
 
@@ -84,25 +85,23 @@ namespace AIOTools.Items
 
 		public override void AddRecipes()
 		{
-			Mod Calamity = ModLoader.GetMod("CalamityMod");
+			ModLoader.TryGetMod("CalamityMod", out Mod calamity);
 
-			if (Calamity != null)
+			if (calamity != null)
 			{
-				ModRecipe recipe = new ModRecipe(mod);
-				recipe.AddIngredient(mod.ItemType("AIOT8"));
-				recipe.AddIngredient(Calamity.ItemType("UeliaceBar"), 8);
+				Recipe recipe = CreateRecipe();
+				recipe.AddIngredient(Mod.Find<ModItem>("AIOT8").Type);
+				recipe.AddIngredient(calamity.Find<ModItem>("UeliaceBar").Type, 8);
 				recipe.AddTile(TileID.LunarCraftingStation);
-				recipe.SetResult(this);
-				recipe.AddRecipe();
+				recipe.Register();
 			}
             else
             {
-				ModRecipe recipe = new ModRecipe(mod);
-				recipe.AddIngredient(mod.ItemType("AIOT8"));
+				Recipe recipe = CreateRecipe();
+				recipe.AddIngredient(Mod.Find<ModItem>("AIOT8").Type);
 				recipe.AddIngredient(ItemID.LunarBar, 50);
 				recipe.AddTile(TileID.LunarCraftingStation);
-				recipe.SetResult(this);
-				recipe.AddRecipe();
+				recipe.Register();
 			}
 		}
 	}

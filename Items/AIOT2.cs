@@ -1,5 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Terraria;
+using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
@@ -17,21 +18,21 @@ namespace AIOTools.Items
 
 		public override void SetDefaults()
 		{
-			item.width = 36;
-			item.height = 40;
-			item.damage = 12;
-			item.knockBack = 4.0f;
-			item.useAnimation = 22;
-			item.pick = 55;
-			item.axe = 11;
-			item.tileBoost = 1;
-			item.melee = true;
-			item.useStyle = ItemUseStyleID.SwingThrow;
-			item.UseSound = SoundID.Item1;
-			item.autoReuse = true;
-			item.useTurn = true;
-			item.value = Item.sellPrice(silver: 20);
-			item.rare = ItemRarityID.White;
+			Item.width = 36;
+			Item.height = 40;
+			Item.damage = 12;
+			Item.knockBack = 4.0f;
+			Item.useAnimation = 22;
+			Item.pick = 55;
+			Item.axe = 11;
+			Item.tileBoost = 1;
+			Item.DamageType = DamageClass.Melee/* tModPorter Suggestion: Consider MeleeNoSpeed for no attack speed scaling */;
+			Item.useStyle = ItemUseStyleID.Swing;
+			Item.UseSound = SoundID.Item1;
+			Item.autoReuse = true;
+			Item.useTurn = true;
+			Item.value = Item.sellPrice(silver: 20);
+			Item.rare = ItemRarityID.White;
 			SetUpItem();
 		}
 		public override bool AltFunctionUse(Player player)
@@ -55,7 +56,7 @@ namespace AIOTools.Items
 					CombatText.NewText(player.getRect(), Color.LightYellow, "Hammer mode activated!");
 				}
 				SetUpItem();
-				Main.PlaySound(SoundID.Item37, player.Center);
+				SoundEngine.PlaySound(SoundID.Item37, player.Center);
 				return true;
 			}
 			return true;
@@ -66,17 +67,17 @@ namespace AIOTools.Items
 			switch(mode)
 			{
 				case 0: // HAMMERTIME
-					item.useTime = 20;
-					item.pick = 0;
-					item.axe = 0;
-					item.hammer = 55;
+					Item.useTime = 20;
+					Item.pick = 0;
+					Item.axe = 0;
+					Item.hammer = 55;
 					break;
 
 				case 1: // not hammertime
-					item.useTime = 15;
-					item.pick = 55;
-					item.axe = 11;
-					item.hammer = 0;
+					Item.useTime = 15;
+					Item.pick = 55;
+					Item.axe = 11;
+					Item.hammer = 0;
 					break;
 			}
 
@@ -84,19 +85,17 @@ namespace AIOTools.Items
 
 		public override void AddRecipes()
 		{
-			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(mod.ItemType("AIOT1"));
+			Recipe recipe = CreateRecipe();
+			recipe.AddIngredient(Mod.Find<ModItem>("AIOT1").Type);
 			recipe.AddIngredient(ItemID.GoldBar, 10);
 			recipe.AddTile(TileID.Anvils);
-			recipe.SetResult(this);
-			recipe.AddRecipe();
+			recipe.Register();
 
-			recipe = new ModRecipe(mod);
-			recipe.AddIngredient(mod.ItemType("AIOT1"));
+			recipe = CreateRecipe();
+			recipe.AddIngredient(Mod.Find<ModItem>("AIOT1").Type);
 			recipe.AddIngredient(ItemID.PlatinumBar, 10);
 			recipe.AddTile(TileID.Anvils);
-			recipe.SetResult(this);
-			recipe.AddRecipe();
+			recipe.Register();
 		}
 	}
 }
