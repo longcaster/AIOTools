@@ -1,0 +1,87 @@
+
+Mods: {
+	AIOTools: {
+		Items: {
+			AIOT1: {
+				DisplayName: AIOT Mk.I (Copper Tier)
+				Tooltip:
+					'''
+					Combination pickaxe, axe, and hammer
+					Right click to switch modes
+					'''
+			}
+
+			AIOT2: {
+				DisplayName: AIOT Mk.II (Gold Tier)
+				Tooltip:
+					'''
+					Combination pickaxe, axe, and hammer
+					Right click to switch modes
+					'''
+			}
+
+			AIOT3: {
+				DisplayName: AIOT Mk.III (Evil Tier)
+				Tooltip:
+					'''
+					Combination pickaxe, axe, and hammer
+					Right click to switch modes
+					'''
+			}
+
+			AIOT4: {
+				DisplayName: AIOT Mk.IV (Hellstone Tier)
+				Tooltip:
+					'''
+					Combination pickaxe, axe, and hammer
+					Right click to switch modes
+					'''
+			}
+
+			AIOT5: {
+				DisplayName: AIOT Mk.V (Adamantite Tier)
+				Tooltip:
+					'''
+					Combination pickaxe, axe, and hammer
+					Right click to switch modes
+					'''
+			}
+
+			AIOT6: {
+				DisplayName: AIOT Mk.VI (Hallowed Tier)
+				Tooltip:
+					'''
+					Combination pickaxe, axe, and hammer
+					Right click to switch modes
+					'''
+			}
+
+			AIOT7: {
+				DisplayName: AIOT Mk.VII (Golem Tier)
+				Tooltip:
+					'''
+					Combination pickaxe, axe, and hammer
+					Right click to switch modes
+					'''
+			}
+
+			AIOT8: {
+				DisplayName: AIOT Mk.VIII (Lunar Tier)
+				Tooltip:
+					'''
+					Combination pickaxe, axe, and hammer
+					Right click to switch modes
+					'''
+			}
+
+			AIOT9: {
+				DisplayName: AIOT Ultimate (Post-ML Tier)
+				Tooltip:
+					'''
+					Combination pickaxe, axe, and hammer
+					Right click to switch modes
+					'''
+			}
+		}
+	}
+}

@@ -12,8 +12,8 @@ namespace AIOTools.Items
 
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("AIOT Mk.VI (Hallowed Tier)");
-			Tooltip.SetDefault("Combination pickaxe, axe, and hammer\nRight click to switch modes");
+			// DisplayName.SetDefault("AIOT Mk.VI (Hallowed Tier)");
+			// Tooltip.SetDefault("Combination pickaxe, axe, and hammer\nRight click to switch modes");
 		}
 
 		public override void SetDefaults()
