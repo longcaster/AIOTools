@@ -2,81 +2,90 @@ Mods: {
 	AIOTools: {
 		Items: {
 			AIOT1: {
-				DisplayName: AIOT Mk.I (Copper Tier)
+				DisplayName: AIOT Mk.I
 				Tooltip:
 					'''
+					Copper Tier
 					Combination pickaxe, axe, and hammer
 					Right click to switch modes
 					'''
 			}
 
 			AIOT2: {
-				DisplayName: AIOT Mk.II (Gold Tier)
+				DisplayName: AIOT Mk.II
 				Tooltip:
 					'''
+					Gold/Platinum Tier
 					Combination pickaxe, axe, and hammer
 					Right click to switch modes
 					'''
 			}
 
 			AIOT3: {
-				DisplayName: AIOT Mk.III (Evil Tier)
+				DisplayName: AIOT Mk.III
 				Tooltip:
 					'''
+					Evil Tier
 					Combination pickaxe, axe, and hammer
 					Right click to switch modes
 					'''
 			}
 
 			AIOT4: {
-				DisplayName: AIOT Mk.IV (Hellstone Tier)
+				DisplayName: AIOT Mk.IV
 				Tooltip:
 					'''
+					Hellstone Tier
 					Combination pickaxe, axe, and hammer
 					Right click to switch modes
 					'''
 			}
 
 			AIOT5: {
-				DisplayName: AIOT Mk.V (Adamantite Tier)
+				DisplayName: AIOT Mk.V
 				Tooltip:
 					'''
+					Adamantite/Titanium Tier
 					Combination pickaxe, axe, and hammer
 					Right click to switch modes
 					'''
 			}
 
 			AIOT6: {
-				DisplayName: AIOT Mk.VI (Hallowed Tier)
+				DisplayName: AIOT Mk.VI
 				Tooltip:
 					'''
+					Hallowed Tier
 					Combination pickaxe, axe, and hammer
 					Right click to switch modes
 					'''
 			}
 
 			AIOT7: {
-				DisplayName: AIOT Mk.VII (Golem Tier)
+				DisplayName: AIOT Mk.VII
 				Tooltip:
 					'''
+					Golem Tier
 					Combination pickaxe, axe, and hammer
 					Right click to switch modes
 					'''
 			}
 
 			AIOT8: {
-				DisplayName: AIOT Mk.VIII (Lunar Tier)
+				DisplayName: AIOT Mk.VIII
 				Tooltip:
 					'''
+					Lunar Tier
 					Combination pickaxe, axe, and hammer
 					Right click to switch modes
 					'''
 			}
 
 			AIOT9: {
-				DisplayName: AIOT Ultimate (Post-ML Tier)
+				DisplayName: AIOT Ultimate
 				Tooltip:
 					'''
+					Post-ML Tier
 					Combination pickaxe, axe, and hammer
 					Right click to switch modes
 					'''
