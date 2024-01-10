@@ -67,7 +67,7 @@ namespace AIOTools.Items
 			switch(mode)
 			{
 				case 0: // HAMMERTIME
-					Item.useTime = 20;
+					Item.useTime = 19;
 					Item.pick = 0;
 					Item.axe = 0;
 					Item.hammer = 55;

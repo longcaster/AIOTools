@@ -20,7 +20,8 @@ namespace AIOTools.Items
 		{
 			Item.width = 36;
 			Item.height = 40;
-			Item.damage = 36;
+            Item.scale = 1.5f;
+            Item.damage = 36;
 			Item.knockBack = 6.0f;
 			Item.useAnimation = 20;
 			Item.pick = 200;
@@ -67,7 +68,7 @@ namespace AIOTools.Items
 			switch(mode)
 			{
 				case 0: // HAMMERTIME
-					Item.useTime = 14;
+					Item.useTime = 13;
 					Item.pick = 0;
 					Item.axe = 0;
 					Item.hammer = 80;
