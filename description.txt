@@ -17,5 +17,5 @@ Higher tier AIOTs also pack a punch and can be used as servicable weapons.
 [c/44FFFEA:Lunar tier] can mine everything in the base game as well as Uelibloom ore from Calamity [i/x:3460]
 [c/44FFFEA:Post-ML tier] can mine Auric ore from Calamity.
 
-Sprites are currently placeholders.
-Inspired by the plethora of multipurpose tools in various Minecraft mods.
+Sprites by Qwer
+Inspired by the plethora of multipurpose tools in various Minecraft mods
