@@ -23,7 +23,7 @@ namespace AIOTools.Items
             Item.scale = 1.5f;
             Item.damage = 50;
 			Item.knockBack = 7.0f;
-			Item.useAnimation = 18;
+			Item.useAnimation = 14;
 			Item.pick = 210;
 			Item.axe = 25;
 			Item.tileBoost = 2;
